@@ -3,14 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { HighestSumPopulationComponent } from './components/highest-sum-population/highest-sum-population.component';
+import { PlanetsPopulationChartComponent } from './components/planets-population-chart/planets-population-chart.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HighestSumPopulationComponent,
+    PlanetsPopulationChartComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+   HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
