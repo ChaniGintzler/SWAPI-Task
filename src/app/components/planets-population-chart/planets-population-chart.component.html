@@ -1,0 +1,13 @@
+<div class="horizontalWraaper">
+  <div *ngFor="let planet of planets$ | async" class="horizontalInnerDiv">
+      <div style="position: absolute;
+      bottom: 0;">
+        <div class="legendTitle" >
+            {{ planet.population }}
+          </div>
+          <div class="legend" [style.height.px]="planet.height"></div>
+          <div class="legendTitle">{{ planet.name }}</div>
+      </div>
+   
+  </div>
+</div>

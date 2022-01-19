@@ -1,0 +1,30 @@
+<div style="margin: auto;">
+  <table class="tbl">
+    <tr>
+      <td>Vehicle name with the largest sum</td>
+      <td>
+        <div *ngFor="let item of results$ | async">
+          {{ item.name }}
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Related home planets and their respective population</td>
+      <td>
+        <div *ngFor="let vehicle of results$ | async">
+          <div *ngFor="let pilot of vehicle.pilotsWithPlanet">
+          {{ pilot.planet.name }}, {{ pilot.planet.population }}
+        </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Related pilot names</td>
+      <td>
+        <div *ngFor="let vehicle of results$ | async">
+          <div *ngFor="let pilot of vehicle.pilotsWithPlanet">{{ pilot.name }}</div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

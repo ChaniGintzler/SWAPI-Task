@@ -1,0 +1,24 @@
+.legend {
+  background-color: rgb(238, 236, 236);
+  border: black solid 1px;
+  width: 80px;
+  min-height: 100px; //fake - just to make it look nice
+}
+.horizontalWraaper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: auto;
+}
+.horizontalInnerDiv {
+  display: inline-block;
+  flex-grow: 1;
+  height: 400px;
+  }
+.legendTitle {
+  font-size: 15px;
+  text-align: center;
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
